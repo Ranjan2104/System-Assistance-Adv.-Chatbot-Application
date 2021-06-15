@@ -89,9 +89,9 @@ def clear():
 	chat_window.delete("1.0", "end")
 
 def func(question):
-	if(question == 'hi' or question == 'hello' or question == 'hy' 
-		or question == 'Hi' or question == 'Hello' or question == 'Hy'):
-		chat_window.insert(END, "Root : hi Sir/Ma'am!" + '\n\n')
+	if(question == 'Hi' or question == 'Hello' or question == 'Hy' or question == 
+		'Hey'):
+		chat_window.insert(END, "Root : Hello" + '\n\n')
 
 	elif(question == 'Camera' or question == 'Open camera'):
 		OpenCamera()
@@ -122,26 +122,15 @@ def func(question):
 		'What is the percentage of battery'):
 		BatteryInfo()
 
-	elif(question == 'who create you' or question == 'Who create you' 
-		or question == 'who made you' or question == 'Who made you' or question ==
-		 'who built you' or question == 'Who built you'):
-		chat_window.insert(END, "Root : Team Error 406 built me!" + '\n\n')
+	elif(question == 'Who create you'or question == 'Who made you' or question 
+		== 'Who built you'):
+		chat_window.insert(END, "Root : Amresh Ranjan built me!" + '\n\n')
 
-	elif(question == 'how are you' or question == 'How are you'):
+	elif(question == 'How are you'):
 		chat_window.insert(END, "Root : I am Good!" + '\n\n')
-
-	elif(question == 'Who are you' or question == 'who are you' or question == 'who built you' 
-				or question == 'Who built you'):
-		chat_window.insert(END, "Root : I am fine " + '\n\n')
 		
 	elif(question == 'Tell me about yourself'):
-		chat_window.insert(END, "Root : hello sir/ma'am I am your teaching assitance which is develope by Team error 406 " + '\n\n')
-	
-	elif(question == 'tell me the member of error 406 ' or question == 'Tell me the member of error 406'):
-		chat_window.insert(END, "Root : The Members of error 406 is Ankit ,Amresh and Abhishek " + '\n\n')
-		
-	elif(question == 'Who is the leader of error 406'):
-		chat_window.insert(END, "Root : Er. Ankit Rajput " + '\n\n')
+		chat_window.insert(END, "Root : I am System Assistent which work on your system functions" + '\n\n')
 	
 	elif(question == 'Take screenshot' or question == 'Took screenshot' or question ==
 		'Screenshot' or question == 'Capture screen' or question == 'Screenshot take'
@@ -149,50 +138,6 @@ def func(question):
 		'Take photo' or question == 'Photo save'):
 		chat_window.insert(END, "Root : Ok! Please Wait" + '\n\n')
 		myScreenshot()
-		
-	elif(question == 'Tell me the name of your country'):
-		chat_window.insert(END, "Root : India " + '\n\n')
-		
-	elif(question == 'what is capital of your country'):
-		chat_window.insert(END, "Root : New delhi  " + '\n\n')
-	     
-	elif(question == 'Who is the prime minister of your country'):
-		chat_window.insert(END, "Root : Shree naredra damodar das modi " + '\n\n')
-	     
-	     
-	elif(question == 'Who is  the captain of indian cricket team'):
-		chat_window.insert(END, "Root : Virat kholi " + '\n\n')
-	     
-	elif(question == 'What are the symptoms of corona virus'):
-		chat_window.insert(END, "Root : most common system are feve" + '\n\n')
-		    
-	elif(question == 'Who are you' or question == 'who are you' or question == 
-		'What is your name'):
-		chat_window.insert(END, "Root : I am fine " + '\n\n')
-		
-	elif(question == 'Tell me about yourself'):
-		chat_window.insert(END, "Root : I am virtual assistence Develope by Team error 406 " + '\n\n')
-	
-	elif(question == 'tell me the member of error 406 ' or question == 'Tell me the member of error 406'):
-		chat_window.insert(END, "Root : The Members of error 406 is Ankit ,Amresh and Abhishek " + '\n\n')
-		
-	elif(question == 'Who is the leader of error 406'):
-		chat_window.insert(END, "Root : Ankit Rajput " + '\n\n')
-			
-	elif(question == 'Tell me the name of your country'):
-		chat_window.insert(END, "Root : India " + '\n\n')
-		
-	elif(question == 'what is capital of your country'):
-		chat_window.insert(END, "Root : New delhi  " + '\n\n')
-	     
-	elif(question == 'Who is the prime minister of your country'):
-		chat_window.insert(END, "Root : Shree naredra damodar das modi " + '\n\n')
-	     
-	elif(question == 'Who is  the captain of indian cricket team'):
-		chat_window.insert(END, "Root : Virat kholi" + '\n\n')
-	     
-	elif(question == 'What are the symptoms of corona virus'):
-		chat_window.insert(END, "Root : most common system are fever,cough and tiredness and less common symptoms are aches and pains,sore throat,diarrhoea,conjunctivitis,headache,loss of taste or smell " + '\n\n')
 		    
 	elif(question == 'Who are you' or question == 'who are you' or question ==
 		'whats your name' or question == 'your name' or question == 'what is your name'
@@ -200,8 +145,9 @@ def func(question):
 		chat_window.insert(END, "Root : I am Virtual ChatBot Assistance, My Name is Root" 
 			+ '\n\n')
 
-	elif(question == 'end' or question == 'End' or question == 'Destroy' or question == 
-		'Quit' or question == 'quit' or question == 'abourt'):
+	elif(question == 'End' or question == 'Destroy' or question == 'Quit'or 
+		question == 'Abourt' or question == 'Bye' or question == 'Good bye' or question 
+		== 'Exit' or question == 'By'):
 		chat_window.insert(END, "Root : END ALL!" + '\n\n')
 		speak("Ok by sir Take care")
 		Quit()
