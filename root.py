@@ -61,6 +61,18 @@ def OpenSetting():
 	subprocess.run('start ms-settings:', shell=True)
 	chat_window.insert(END, "Setting is Opening!" + '\n\n')
 
+def OpenWord():
+	subprocess.run('start winword', shell = True)
+	chat_window.insert(END, "Word is Opening!" + '\n\n')
+
+def OpenPowerPoint():
+	subprocess.run('start powerpnt', shell = True)
+	chat_window.insert(END, "PowerPoint is Opening!" + '\n\n')
+
+def OpenExcel():
+	subprocess.run('start excel', shell = True)
+	chat_window.insert(END, "Excel is Opening!" + '\n\n')
+
 def wish():
     hour = int(datetime.datetime.now().hour)
     if hour >= 0 and hour < 12:
@@ -95,6 +107,15 @@ def func(question):
 
 	elif(question == 'Camera' or question == 'Open camera'):
 		OpenCamera()
+
+	elif(question == 'Word' or question == 'Open word'):
+		OpenWord()
+
+	elif(question == 'Powerpoint' or question == 'Open powerpoint'):
+		OpenPowerPoint()
+
+	elif(question == 'Excel' or question == 'Open excel'):
+		OpenExcel()
 
 	elif(question == 'Open control panel' or question == 'Control panel'):
 		OpenControlPAnel()
