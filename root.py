@@ -61,6 +61,30 @@ def OpenSetting():
 	subprocess.run('start ms-settings:', shell=True)
 	chat_window.insert(END, "Setting is Opening!" + '\n\n')
 
+def OpenPaint():
+	subprocess.run('start mspaint', shell = True)
+	chat_window.insert(END, "Paint is Opening!" + '\n\n')
+
+def OpenMusicPlayer():
+	subprocess.run('start mswindowsmusic:', shell = True)
+	chat_window.insert(END, "Music Player is Opening!" + '\n\n')
+
+def OpenVedioPlayer():
+	subprocess.run('start mswindowsvideo:',shell = True)
+	chat_window.insert(END, "Vedio Player is Opening!" + '\n\n')
+
+def OpenImage():
+	subprocess.run('start ms-photos:', shell = True)
+	chat_window.insert(END, "Photos are Opening!" + '\n\n')
+
+def OpenCalc():
+	subprocess.run('start calc', shell = True)
+	chat_window.insert(END, "Calculator is Opening!" + '\n\n')
+
+def OpenCalender():
+	subprocess.run('start outlookcal:', shell = True)
+	chat_window.insert(END, "Calender is Opening!" + '\n\n')
+
 def OpenWord():
 	subprocess.run('start winword', shell = True)
 	chat_window.insert(END, "Word is Opening!" + '\n\n')
@@ -108,8 +132,30 @@ def func(question):
 	elif(question == 'Camera' or question == 'Open camera'):
 		OpenCamera()
 
+	elif(question == 'Open paint' or question == 'Paint'):
+		OpenPaint()
+
 	elif(question == 'Word' or question == 'Open word'):
 		OpenWord()
+
+	elif(question == 'Calender'or question == 'Open calender'):
+		OpenCalender()
+
+	elif(question == 'Photo' or question == 'Photos' or question == 'Image' or question 
+		== 'Open photo' or question == 'Open photos' or question == 'Gallery'):
+		OpenImage()
+
+	elif(question == 'Open vedio player' or question == 'Vedio player' or question == 
+		'Vedio'):
+		OpenVedioPlayer()
+
+	elif(question == 'Open music player' or question == 'Music player' or question == 
+	'Music' or question == 'Groove Music'):
+		OpenMusicPlayer()	
+
+	elif(question == 'Open calc' or question == 'Calculator' or question == 
+		'Open calculator' or question == 'Calc'):
+		OpenCalc()
 
 	elif(question == 'Powerpoint' or question == 'Open powerpoint'):
 		OpenPowerPoint()
