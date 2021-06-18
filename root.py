@@ -93,6 +93,14 @@ def OpenPowerPoint():
 	subprocess.run('start powerpnt', shell = True)
 	chat_window.insert(END, "PowerPoint is Opening!" + '\n\n')
 
+def OpenClock():
+	subprocess.run('start ms-clock:', shell = True)
+	chat_window.insert(END, "Alarm and Clock is Opening!" + '\n\n')
+
+def OpenMail():
+	subprocess.run('start outlookmail:', shell = True)
+	chat_window.insert(END, "Mail is Opening!" + '\n\n')
+
 def OpenExcel():
 	subprocess.run('start excel', shell = True)
 	chat_window.insert(END, "Excel is Opening!" + '\n\n')
@@ -132,8 +140,16 @@ def func(question):
 	elif(question == 'Camera' or question == 'Open camera'):
 		OpenCamera()
 
+	elif(question == 'Alarm' or question == 'Clock' or question == 'Alarm and Clock' or
+		question == 'Open clock' or question == 'Open Alarm' or question == 
+		'Open Alarm and clock'):
+		OpenClock()
+
 	elif(question == 'Open paint' or question == 'Paint'):
 		OpenPaint()
+
+	elif(question == 'Mail' or question == 'Open mail'):
+		OpenMail()	
 
 	elif(question == 'Word' or question == 'Open word'):
 		OpenWord()
